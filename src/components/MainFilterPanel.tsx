@@ -5,7 +5,7 @@ import Dropdown from "@/ui/Dropdown";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const SessionFilterPanel = () => {
+const MainFilterPanel = () => {
   const providers = useSelector((state: RootState) => state.provider.items);
 
   const [selectedType, setSelectedType] = useState<string | null>(null);
@@ -109,4 +109,4 @@ const SessionFilterPanel = () => {
   );
 };
 
-export default SessionFilterPanel;
+export default MainFilterPanel;
