@@ -8,6 +8,15 @@
 
 <em></em>
 
+<!-- BADGES -->
+
+<em>Built with the tools and technologies:</em>
+
+<img src="https://img.shields.io/badge/Next.js-000000.svg?style=default&logo=Next.js&logoColor=white" alt="Next.js">
+<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=default&logo=TypeScript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC.svg?style=default&logo=TailwindCSS&logoColor=white" alt="TailwindCSS">
+
+</div>
 <br>
 
 ---
@@ -17,17 +26,10 @@
 * [Overview](#overview)
 * [Features](#features)
 * [Project Structure](#project-structure)
-
-  * [Project Index](#project-index)
 * [Getting Started](#getting-started)
-
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-  * [Usage](#usage)
-  * [Testing](#testing)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
-* [License](#license)
 * [Acknowledgments](#acknowledgments)
 
 ---
@@ -41,29 +43,30 @@ Built with **Next.js 15, TypeScript, Redux Toolkit, and Tailwind CSS**.
 
 ## Features
 
-*  Dynamic provider roster (API-driven)
-*  Filters for **Service**, **Type**, and **Center**
-*  Search functionality
-*  Weekly calendar grid (00:00 – 23:00)
-*  Color-coded availability slots:
+* Dynamic provider roster (API-driven)
+* Filters for **Service**, **Type**, and **Center**
+* Search functionality
+* Weekly calendar grid (00:00 – 23:00)
+* Color-coded availability slots:
 
   * 🟩 Online
   * 🟧 Offline
   * 🟦 Online + Offline
   * 🟫 Blocked
   * ⬜ Available
-*  Responsive UI with TailwindCSS
+* Responsive UI with TailwindCSS
 
 ---
 
 [Click here to view the live app]()
 
+---
 
 
 ## Project Structure
 
 ```sh
-└── roster-manager-pro/
+└── roster-management-app/
     ├── eslint.config.mjs
     ├── next.config.ts
     ├── package-lock.json
@@ -90,54 +93,59 @@ Built with **Next.js 15, TypeScript, Redux Toolkit, and Tailwind CSS**.
 This project requires the following dependencies:
 
 * **Programming Language:** TypeScript
-* **Framework:** Next.js 15
 * **Package Manager:** Npm
 * **Container Runtime:** Docker
 
 ### Installation
 
-1. Clone the repository:
+Build roster-management-app from the source and install dependencies:
 
-```sh
-git clone https://github.com/udayige/RosterManagerPro.git
-cd roster-management-app
-```
+1. **Clone the repository:**
 
-2. Install dependencies:
+   ```sh
+   git clone https://github.com/udayige/RosterMangerPro.git
+   ```
 
-```sh
-npm install
-```
+2. **Navigate to the project directory:**
 
-3. Run development server:
+   ```sh
+   cd RosterMangerPro
+   ```
+
+3. **Install the dependencies:**
+
+   **Using [npm](https://www.npmjs.com/):**
+
+   ```sh
+   npm install
+   ```
+
+### Usage
+
+**Using Npm:**
 
 ```sh
 npm run dev
 ```
 
-App will run at [http://localhost:3000](http://localhost:3000)
-
 
 
 ## Contributing
 
-Contributions are welcome! 🚀
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+* **💬 Discussions:** Share insights, feedback, or ask questions.
+* **🐛 Issues:** Report bugs or request new features.
+* **💡 Pull Requests:** Contribute enhancements or bug fixes.
 
 ---
 
-## License
 
-Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
+## Acknowledgments
+
+* Inspired by scheduling & calendar management systems
+* Built with ❤️ using Next.js 15 & Tailwind CSS
 
 ---
 
-<div align="center">
-Made with ❤️ using Next.js 15, TypeScript, and TailwindCSS
-</div>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
