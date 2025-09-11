@@ -19,7 +19,7 @@ export const Header = ({ activeView, setActiveView }: HeaderProps) => {
             className="text-xl p-2 gap-2 w-10 h-10 font-bold text-[#4C4C4C]"
           />
           <h1 className="text-lg font-semibold text-[#4C4C4C]">
-            Provider Calendar
+            { activeView === "list" ? "Session Roster" : "Calendar" }
           </h1>
         </div>
         <div>
