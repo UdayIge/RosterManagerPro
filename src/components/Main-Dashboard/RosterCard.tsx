@@ -72,7 +72,7 @@ const RosterCard = ({
           const online = availability?.online_slots?.length ?? 0;
           const offline = availability?.offline_slots?.length ?? 0;
           return (
-            <div key={inx} className="mt-6 flex">
+            <div key={inx} className="mt-6 flex justify-between gap-12">
               <ProviderDetails
                 imageUrl={provider.image}
                 name={provider.name}
@@ -86,7 +86,7 @@ const RosterCard = ({
           );
         })
       ) : (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-20">
           <Loader />
         </div>
       )}
@@ -95,3 +95,4 @@ const RosterCard = ({
 };
 
 export default RosterCard;
+

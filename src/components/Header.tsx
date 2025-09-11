@@ -16,7 +16,14 @@ export const Header = ({ activeView, setActiveView }: HeaderProps) => {
             alt="Chevrons Right"
             width={40}
             height={40}
-            className="text-xl p-2 gap-2 w-10 h-10 font-bold text-[#4C4C4C]"
+            onClick={() => {
+              if (activeView === "list") {
+                setActiveView("calendar");
+              } else {
+                window.history.back();
+              }
+            }}
+            className="text-xl p-2 gap-2 w-10 h-10 font-bold text-[#4C4C4C] cursor-pointer"
           />
           <h1 className="text-lg font-semibold text-[#4C4C4C]">
             { activeView === "list" ? "Session Roster" : "Calendar" }

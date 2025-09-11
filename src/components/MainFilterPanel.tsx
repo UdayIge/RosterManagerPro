@@ -67,21 +67,35 @@ const MainFilterPanel = () => {
   return (
     <div>
       <div>
-        <Dropdown
-          options={types}
-          value={selectedType}
-          onChange={setSelectedType}
-        />
-        <Dropdown
-          options={services}
-          value={selectedService}
-          onChange={setSelectedService}
-        />
-        <Dropdown
-          options={centers}
-          value={selectedCenter}
-          onChange={setSelectedCenter}
-        />
+        <div className="flex flex-col">
+          <label className="text-sm text-gray-600 mb-4">Provider Type</label>
+          <Dropdown
+            options={types}
+            value={selectedType}
+            onChange={setSelectedType}
+            ariaLabel="Provider Type"
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <label className="text-sm text-gray-600 mb-4">Service</label>
+          <Dropdown
+            options={services}
+            value={selectedService}
+            onChange={setSelectedService}
+            ariaLabel="Service"
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <label className="text-sm text-gray-600 mb-4">Clinic</label>
+          <Dropdown
+            options={centers}
+            value={selectedCenter}
+            onChange={setSelectedCenter}
+            ariaLabel="Clinic"
+          />
+        </div>
       </div>
       <div className="flex gap-2">
         {hasSelectedFilters ? (

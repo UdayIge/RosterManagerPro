@@ -21,7 +21,8 @@ const SearchInput = () => {
           type="text"
           value={search}
           onChange={handleSearchChange}
-          placeholder="Enter Text"
+          placeholder="Search providers"
+          aria-label="Search providers"
           className="focus:outline-none focus:ring-0 focus:border-transparent w-full"
         />
       </div>

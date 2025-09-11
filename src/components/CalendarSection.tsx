@@ -54,6 +54,7 @@ const CalendarSection = ({
     setBaseDate(newDate);
   };
 
+
   return (
     <div className="p-5">
       <DateNavigation

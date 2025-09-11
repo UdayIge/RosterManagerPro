@@ -6,8 +6,9 @@ interface DropdownProps {
   value: string | null;
   onChange: (value: string | null) => void;
   className?: string;
+  ariaLabel?: string;
 }
-const Dropdown = ({ options, value, onChange, className }: DropdownProps) => {
+const Dropdown = ({ options, value, onChange, className, ariaLabel }: DropdownProps) => {
   const [query, setQuery] = useState(value ?? "");
   const [filtered, setFiltered] = useState<string[]>(options);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -61,7 +62,8 @@ const Dropdown = ({ options, value, onChange, className }: DropdownProps) => {
         onChange={(e) => handleInputChange(e.target.value)}
         onFocus={() => setShowDropdown(true)}
         className="flex-1 w-73 p-2 h-10 max-w-100 rounded-lg border border-[var(--border-primary)]"
-        placeholder="Enter Text"
+        placeholder={`Select ${ariaLabel}`}
+        aria-label={ariaLabel ?? "Dropdown input"}
       />
 
       <Image
