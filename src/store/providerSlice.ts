@@ -19,7 +19,7 @@ const initialState: State = {
 };
 
 export const fetchProviders = createAsyncThunk("provider/fetch", async () => {
-    const response = await fetch("/api/mock");
+    const response = await fetch("/mock/roster.json");
     return (await response.json()) as ProviderEntity[];
 });
 
