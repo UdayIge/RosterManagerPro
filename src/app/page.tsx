@@ -1,12 +1,13 @@
 "use client";
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "@/store/index";
-import { useEffect, useState } from "react";
-import { fetchProviders } from "@/store/providerSlice";
 import { Header } from "@/components/Header";
+import { AppDispatch } from "@/store";
+import { fetchProviders } from "@/store/providerSlice";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import MainSidebar from "@/components/MainSidebar";
 import MainSection from "@/components/MainSection";
-import CalendarMainArea from "@/components/CalendarSection";
+import CalendarSection from "@/components/CalendarSection";
+import CalendarSidebar from "@/components/Calender/CalendarSidebar";
 
 export default function Home() {
   const dispatch = useDispatch<AppDispatch>();
@@ -23,22 +24,31 @@ export default function Home() {
     }
   }, [activeView]);
 
+  const removeProvider = () => {
+    setSelectedProvider(null);
+  };
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="font-sans grid">
       <Header activeView={activeView} setActiveView={setActiveView} />
-      <div className="w-full h-full flex flex-col sm:flex-row gap-8 sm:gap-16">
-        <MainSidebar />
+      <div className="flex">
         {activeView === "list" ? (
-          <MainSection
-            setActiveView={setActiveView}
-            setSelectedProvider={setSelectedProvider}
-          />
+          <>
+            <MainSidebar />
+            <MainSection
+              setActiveView={setActiveView}
+              setSelectedProvider={setSelectedProvider}
+            />
+          </>
         ) : (
-          <CalendarMainArea selectedProvider={selectedProvider} />
+          <>
+            <CalendarSidebar
+              selectedProvider={selectedProvider}
+              removeProvider={removeProvider}
+            />
+            <CalendarSection selectedProvider={selectedProvider} />
+          </>
         )}
-      </div>
-      <div className="text-center text-sm text-gray-500">
-        &copy; 2024 Roster Management System
       </div>
     </div>
   );

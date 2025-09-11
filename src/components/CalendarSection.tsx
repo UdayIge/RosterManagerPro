@@ -9,7 +9,7 @@ import { ProviderEntity } from "@/lib/types";
 import DateNavigation from "./Calender/DateNavigation";
 import CalendarView from "./Calender/CalendarView";
 
-const CalendarMainArea = ({
+const CalendarSection = ({
   selectedProvider,
 }: {
   selectedProvider: string | null;
@@ -70,4 +70,4 @@ const CalendarMainArea = ({
   );
 };
 
-export default CalendarMainArea;
+export default CalendarSection;

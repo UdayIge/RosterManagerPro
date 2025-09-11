@@ -2,7 +2,7 @@ import React from "react";
 import SearchInput from "../SearchInput";
 import Image from "next/image";
 
-const CalendarControlPanel = ({
+const CalendarSidebar = ({
   selectedProvider,
   removeProvider,
 }: {
@@ -31,4 +31,4 @@ const CalendarControlPanel = ({
   );
 };
 
-export default CalendarControlPanel;
+export default CalendarSidebar;
