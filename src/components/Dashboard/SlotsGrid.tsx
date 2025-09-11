@@ -1,4 +1,4 @@
-import { generateTimeSlots } from "@/lib/time-slots";
+import { generateTimeSlots } from "@/lib/time";
 import Slot from "@/ui/Slot";
 import Image from "next/image";
 import React, { useState } from "react";
