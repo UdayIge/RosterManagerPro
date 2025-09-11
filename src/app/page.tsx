@@ -1,6 +1,6 @@
 "use client";
 import { useDispatch } from "react-redux";
-import { AppDispatch } from "@/store";
+import { AppDispatch } from "@/store/index";
 import { useEffect, useState } from "react";
 import { fetchProviders } from "@/store/providerSlice";
 import { Header } from "@/components/Header";

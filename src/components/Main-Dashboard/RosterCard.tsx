@@ -6,7 +6,7 @@ import { RootState } from "@/store";
 import SlotsGrid from "./SlotsGrid";
 import Loader from "@/ui/Loader";
 
-const ProviderSlots = ({
+const RosterCard = ({
   setSelectedProvider,
   setActiveView,
 }: {
@@ -94,4 +94,4 @@ const ProviderSlots = ({
   );
 };
 
-export default ProviderSlots;
+export default RosterCard;

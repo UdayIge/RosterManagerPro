@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import DateGrid from "./Dashboard/DateGrid";
-import DateNavigation from "./Dashboard/DateNavigation";
-import ProviderSlots from "./Dashboard/ProviderSlots";
+import DateGrid from "./Main-Dashboard/DateGrid";
+import DateNavigation from "./Main-Dashboard/DateNavigation";
+import RosterCard from "./Main-Dashboard/RosterCard";
 
 const MainSection = ({
   setActiveView,
@@ -17,7 +17,7 @@ const MainSection = ({
     <div className="p-5">
       <DateGrid selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
       <DateNavigation selectedDate={selectedDate} />
-      <ProviderSlots
+      <RosterCard
         setSelectedProvider={setSelectedProvider}
         setActiveView={setActiveView}
       />
