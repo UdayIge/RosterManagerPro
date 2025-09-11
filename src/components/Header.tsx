@@ -17,8 +17,8 @@ export const Header = ({ activeView, setActiveView }: HeaderProps) => {
             width={40}
             height={40}
             onClick={() => {
-              if (activeView === "list") {
-                setActiveView("calendar");
+              if (activeView === "calendar") {
+                setActiveView("list");
               } else {
                 window.history.back();
               }

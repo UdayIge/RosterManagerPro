@@ -16,7 +16,7 @@ const formatDate = (date: Date) => {
 
 const DateNavigation = ({ selectedDate }: DateNavigationProps) => {
   return (
-    <div className="flex justify-between items-center mt-8">
+    <div className="flex justify-between items-center">
       <div>
         <h3 className="font-semibold text-[#4C4C4C]">
           {selectedDate.length > 0

@@ -34,9 +34,9 @@ const DateGrid = ({ selectedDate, setSelectedDate }: DateGridProps) => {
   const handleToggleDate = (date: Date) => {
     const isAlreadySelected = selectedDate.some((d) => isSameDate(d, date));
     if (isAlreadySelected) {
-      setSelectedDate(selectedDate.filter((d) => !isSameDate(d, date)));
+      setSelectedDate([]);
     } else {
-      setSelectedDate([...selectedDate, date]);
+      setSelectedDate([ date ]); // Single selection
     }
   };
 

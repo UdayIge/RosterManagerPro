@@ -14,7 +14,7 @@ const MainSection = ({
   const [selectedDate, setSelectedDate] = useState<Date[]>([new Date()]);
 
   return (
-    <div className="p-5">
+    <div className="p-5 flex flex-col overflow-y-auto gap-12">
       <DateGrid selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
       <DateNavigation selectedDate={selectedDate} />
       <RosterCard

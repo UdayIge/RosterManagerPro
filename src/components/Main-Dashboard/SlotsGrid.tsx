@@ -51,7 +51,7 @@ const SlotsGrid = ({ availability }: SlotsGridProps) => {
   }
 
   return (
-    <div className="flex border border-[var(--border-primary)] rounded-2xl w-224">
+    <div className="flex border border-[var(--border-primary)] rounded-2xl w-204 h-54">
       <div
         onClick={() => setCurrentPage((p) => Math.max(p - 1, 0))}
         className={`flex items-center justify-center z-10 border-r border-[var(--border-primary)] w-10 h-full cursor-pointer ${
