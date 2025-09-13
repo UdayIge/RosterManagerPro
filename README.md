@@ -25,6 +25,7 @@
 
 * [Overview](#overview)
 * [Features](#features)
+* [Demo](#demo)
 * [Project Structure](#project-structure)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -58,10 +59,10 @@ Built with **Next.js 15, TypeScript, Redux Toolkit, and Tailwind CSS**.
 
 ---
 
-[Click here to view the live app]()
+## Demo 
+[Click here to view the live app](https://roster-manager-pro.vercel.app/)
 
 ---
-
 
 ## Project Structure
 
