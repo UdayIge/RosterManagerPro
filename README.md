@@ -95,7 +95,6 @@ This project requires the following dependencies:
 
 * **Programming Language:** TypeScript
 * **Package Manager:** Npm
-* **Container Runtime:** Docker
 
 ### Installation
 
@@ -147,6 +146,6 @@ npm run dev
 
 ---
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!--<p align="right">(<a href="#top">back to top</a>)</p>-->
 
 
